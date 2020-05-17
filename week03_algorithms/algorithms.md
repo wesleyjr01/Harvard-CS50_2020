@@ -72,17 +72,21 @@ Repeat n-1 times until no swap
     * The answer is: **(n-1)x(n-2)**, which is **n²-3n+2**.
     * So the dominating factor of this algorithm is **n²**. So the order of this algorithm, **O** is **O(n²)**.
 ---
+# Selection Sort
 * Lets try a different approach for sorting, since the bubble sort is very costly. We will do now **Selection sort**. Let's see it's pseudocode:
 
 ```
-For i from 0 to n-1
-    Find the smalles item between i'th item and last item
-    Swap smallest item with i'th item
+Repeat until no sorted elements remain:
+    Search the unsorted part of the data to find the smallest value
+    Swap the smallest found value with the first element of the unsorted part
 ```   
 * That leads us to **n(n+1)/2** steps, which is is in the order of n2, so **O(n²)**.
 ---
 # Recursion
 * Implement an algorithm that calls itself. We define a recursive function, if we reference it's own name in its own code.
+* Every recursive function has two cases that could apply, given any input:
+    * The *base case*, which when triggered will terminate the recursive process.
+    * The recursive case, which is where the recursion will actually occur.
 ---
 # Merge Sort
 ```
