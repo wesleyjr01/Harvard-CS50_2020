@@ -87,6 +87,7 @@ Repeat until no sorted elements remain:
 * Every recursive function has two cases that could apply, given any input:
     * The *base case*, which when triggered will terminate the recursive process.
     * The recursive case, which is where the recursion will actually occur.
+* In general, but not always, recursive functions replace loops in non-recursive functions.
 ---
 # Merge Sort
 ```
