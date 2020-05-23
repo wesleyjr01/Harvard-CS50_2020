@@ -17,4 +17,8 @@ int main(void)
     printf("%s\n", s);
     printf("%s\n", t);
 
+    free(t);
+
 }
+
+// use valgrind function to inspect for memory leaks
