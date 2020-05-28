@@ -24,12 +24,12 @@
 * ```fgetc()```
     * Reads and returns the next character from the file pointed to.
     * Note: The operation of the file pointer passed in as parameter must be "r" for read, or you will suffer an error.
-    * ```char ch = fget(<file pointer>);```
+    * ```char ch = fgetc(<file pointer>);```
     * The ability to get single characters from files, if wrapped in a loop, means we could read all the characters from a file and print them to the screen, one-by-one, essentially:
 
     ```
     char ch;
-    while ((ch = fget(ptr)) != EOF)
+    while ((ch = fgetc(ptr)) != EOF)
         printf("%c", ch);
     ```
 ---
