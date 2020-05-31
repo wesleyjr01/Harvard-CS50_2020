@@ -1,0 +1,1 @@
+SELECT COUNT(title) AS N_TITLES FROM movies JOIN ratings on ratings.movie_id = movies.id WHERE ratings.rating = "10";
