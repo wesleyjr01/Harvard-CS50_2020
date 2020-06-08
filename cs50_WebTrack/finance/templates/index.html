@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Unit Price</th>
+            <th>TOTAL</th>
+    </tr>
+    {% for row in rows %}
+        <tr>
+            <td>{{ row['symbol'] }}</td>
+            <td>{{ row['name'] }}</td>
+            <td>{{ row['shares'] }}</td>
+            <td>{{ row['current_stock_price'] }}</td>
+            <td>{{ row['total_stocks_price'] }}</td>
+        </tr>
+    {% endfor %}
+        <tr>
+            <td>CASH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ cash }}</td>
+        </tr>
+        <tr>
+            <td>STOCKS VALUE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ acum_stocks_price }}</td>
+        </tr>
+        <tr>
+            <td>TOTAL PATRIMONY</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ total_patrimony }}</td>
+        </tr>
+    </table>
+{% endblock %}
